@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博学谷</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        @media (width:375px){
+            html{
+                font-size: 37.5px;
+            }
+        }
+        @media (width:320px){
+            html{
+                font-size: 32px;
+            }
+        }
+        @media (width:414px){
+            html{
+                font-size: 41.4px;
+            }
+        }
+          @media (width:360px){
+            html{
+                font-size: 36px;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+             border-bottom: 0.053rem solid #ccc;
+             position: fixed;
+             top:0;
+             left: 0;
+             z-index: 1;
+             background-color: #fff;   
+             width: 100%;
+        }
+        header .top{
+            height: 1.33rem;
+            background-color: rgb(28, 121, 228);
+            opacity: .7;
+            color: #fff;
+            font-size:0.53rem;
+            text-align: center;
+            line-height: 1.33rem;
+        }
+        header .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 1.33rem;
+            padding: 0 0.133rem;
+            font-size:0.5rem;
+        }
+        header .bottom p:last-child{
+            width: 2.53rem;
+            height: 0.9rem;
+            border-radius: 0.45rem;
+            background-color: #ccc;
+            color: #fff;
+            text-align: center;
+            line-height: 0.9rem;
+        }
+      
+        .content_list .list{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            height: 2.66rem;
+            padding: 0 0.2rem;
+            border-bottom: 0.053rem solid #ccc;
+        }
+        .content_list .left{
+            display: flex;
+            align-items: center;
+        }
+        .content_list .left img{
+            width: 1.78rem;
+            height: 1.78rem;
+        }
+         .content_list .left h3{
+             font-size: 0.7rem;
+         }
+         .content_list .left p{
+             font-size: 0.5rem;
+         }
+         .content_list .right{
+             font-size: 0.5rem;
+             color: rgb(28, 230, 162);
+         }
+
+         /* 加载更多 */
+         .more{
+             width: 100%;
+             height: 1.33rem;
+             background-color: rgba(248, 246, 246, 0.733);
+             text-align: center;
+             line-height: 1.33rem;
+             font-size: 0.7rem;
+         }
+
+        .copy{
+            width: 100%;
+            height: 3.68rem;
+            background-color: #fff;
+            text-align: center;
+            padding:0.6rem 0;
+            font-size: 0.5rem;
+            box-sizing: border-box;
+           
+        }
+
+         /* 底部 */
+         footer{
+             position: fixed;
+             bottom: 0;
+             left: 0;
+             display: flex;
+             height: 1.33rem;
+             width: 100%;
+             background-color: #fff;
+             border-top: 0.053rem solid #ccc;
+         }
+         footer div{
+            font-size: 0.55rem;
+            width: 4.08rem;
+            height: 100%;
+            line-height: 1.33rem; 
+            text-align: center;
+         }
+         footer div .iconfont{
+            font-size: 0.6rem;
+            vertical-align: middle;
+         }
+         footer .current{
+             background-color: rgb(145, 157, 173);
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">博学谷</div>
+        <div class="bottom">
+            <p>一键学习</p>
+            <p>去登录</p>
+        </div>
+    </header>
+    <section class="content_list">
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/bxg.jpeg" alt="">
+                </a>
+                <div class="txt">
+                    <h3>创智教育</h3>
+                    <p>博学谷前端学习</p>
+                    <p>今天<span>11:20</span></p>
+                </div>
+            </div>
+            <div class="right">
+                立即加入
+            </div>
+        </div>
+    </section>
+    <div class="more">
+        加载更多
+    </div>
+    <div class="copy">
+        <p>@2015 lagou.com,all right reserved</p>
+        <p>移动版●移动版●移动版</p>
+    </div>
+    <footer>
+        <div class="current">
+            <i class="iconfont icon-course"></i>
+            课程
+        </div>
+        <div>
+            <i class="iconfont icon-search"></i>
+            搜索
+        </div>
+        <div>
+            <i class="iconfont icon-wode"></i>
+            我的
+        </div>
+    </footer>
+</body>
+</html>

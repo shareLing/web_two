@@ -1,0 +1,36 @@
+@import './base.less';
+@import './normalize.less';
+// 变量: 存储37.5
+@rootSize: 37.5rem;
+
+body{
+    background-color: #F0F0F0;
+}
+// 主体部分
+.main{
+    padding-bottom: (50 / @rootSize);
+    .pic{
+        position: relative;
+        height: (200 / @rootSize);
+        i:nth-child(2){
+            position: absolute;
+            top:(15 / @rootSize);
+            right: (20 / @rootSize);
+            font-size: (24 / @rootSize);
+        }
+    }
+}
+
+// 底部
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: (50 / @rootSize);
+    width: 100%;
+    background-color: #FECB49;
+    color: #fff;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .stage {
+        width: 520px;
+        height: 520px;
+        border: 1px solid red;
+        margin: 0 auto;
+        /* position: relative; */
+      }
+      .stage div {
+        width: 280px;
+        height: 280px;
+        border: 1px solid red;
+        margin-left: 120px;
+      }
+      .stage img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation: move 5s infinite;
+      }
+      @keyframes move {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 400px;
+          left: 0;
+        }
+        50% {
+          top: 400px;
+          left: 410px;
+        }
+        75% {
+          top: 0px;
+          left: 410px;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <img src="./images/tz.jpeg" alt="" />
+      <div></div>
+    </div>
+  </body>
+</html>

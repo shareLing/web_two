@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标基本使用-类名</title>
+    <!-- 第一步引用文件中的iconfont.css文件 -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        /* .iconfont {
+            font-size: 60px;
+        } */
+        /* 用i标签设置不生效，是因为标签选择器的权重没有类选择器
+        *  的大，从而导致font-size被覆盖掉了
+        */
+        i {
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第二步创建一个i标签或者span标签,添加两个类名,一个固定的是iconfont,另一个是你想要的那个图标对应的类名: -->
+    <i class="iconfont icon-favorites-fill"></i>
+</body>
+</html>

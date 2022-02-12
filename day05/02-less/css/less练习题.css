@@ -1,0 +1,24 @@
+#container {
+  width: 800px;
+  margin: 0 auto;
+}
+#container .head {
+  height: 100px;
+  background-color: #65a9e0;
+}
+#container .content {
+  display: flex;
+  height: 500px;
+}
+#container .content .content_left {
+  width: 300px;
+  background-color: pink;
+}
+#container .content .content_right {
+  flex: 1;
+  background-color: red;
+}
+#container .foot {
+  height: 120px;
+  background-color: black;
+}

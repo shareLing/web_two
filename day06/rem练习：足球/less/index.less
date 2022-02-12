@@ -1,0 +1,141 @@
+@import './base';
+@import './normalize';
+@rootSize: 37.5rem;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: (50 / @rootSize);
+        background-color: rgb(94, 207, 113);
+        font-size: (16 / @rootSize);
+
+        p {
+            display: flex;
+            width: (130 / @rootSize);
+            height: (30 / @rootSize);
+            border-radius: (15 / @rootSize);
+            line-height: (30 / @rootSize);
+            background-color: rgb(111, 230, 190);
+            color: #ccc;
+
+            span {
+                width: (65 / @rootSize);
+                text-align: center;
+
+                &.current {
+                    background-color: rgba(164, 226, 159, 0.767);
+                    color: #fff;
+                }
+            }
+
+            span:first-child {
+                border-top-left-radius: (15 / @rootSize);
+                border-bottom-left-radius: (15 / @rootSize);
+            }
+
+            span:last-child {
+                border-top-right-radius: (15 / @rootSize);
+                border-bottom-right-radius: (15 / @rootSize);
+            }
+
+        }
+    }
+
+    .bottom {
+        background-color: #fff;
+        font-size: (18 / @rootSize);
+        font-weight: 600;
+        border-bottom: (2 / @rootSize) solid #ccc;
+        ul {
+            display: flex;
+            align-items: center;
+            height: (50 / @rootSize);
+            li {  
+                a {
+                    color:rgb(124, 120, 120);
+                    padding: 0 (25 / @rootSize);
+                    padding-bottom: (12 / @rootSize);
+                    &.current {
+                        color: rgb(27, 136, 27);
+                        border-bottom: (5 / @rootSize) solid rgb(27, 136, 27);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.main{ 
+    margin-top: (100 / @rootSize);
+    padding-bottom: (50 / @rootSize);
+    .list{
+        display: flex;
+        // 弹性盒子换行
+        flex-wrap: wrap;
+        a{
+           width: 50%;
+           font-size: (12 / @rootSize);
+           padding: (8 / @rootSize) (5 / @rootSize);
+           //设置内边距后，盒子自减
+           box-sizing:border-box;
+           }
+           h5{
+               height: (40 / @rootSize);
+               line-height: (40 / @rootSize);
+               font-size: (16 / @rootSize);
+               color: rgb(46, 14, 82);
+           }
+        }
+    }
+
+
+// 底部部分
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 (10 / @rootSize);
+    box-sizing: border-box;
+    height: (75/ @rootSize);
+    width: 100%;
+    background: #fff;
+    a{
+        color: #ccc;
+        font-size: (16 / @rootSize);
+        text-align: center;
+        .iconfont{
+            font-size: (24 / @rootSize);
+        }
+        p{
+            padding-top: (5 / @rootSize);
+        }
+        &.current{
+            color: rgb(21, 129, 48);
+        }
+        
+    }
+    a:nth-child(3){
+        position: relative;
+        top: -10px;
+        width: (66 / @rootSize);
+        height:(66 / @rootSize);
+        line-height:(66 / @rootSize);
+        border:(2 / @rootSize) solid #ccc;
+        border-radius: (33 / @rootSize);
+        background-color: #fff;
+        .icon-xiangji_huaban{
+            font-size: (35 / @rootSize);
+        }
+    }
+}
